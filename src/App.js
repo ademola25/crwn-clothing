@@ -16,7 +16,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentUSer: null
+      currentUser: null
     }
   }
 
@@ -46,7 +46,7 @@ class App extends React.Component {
   render() {
   return (
     <div>
-      <Header currentUser={this.setState}/>
+      <Header currentUser={this.state.currentUser}/>
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
